@@ -50,11 +50,11 @@
   var options = {
       dataAxis: {alignZeros: false},
       legend: {left:{position:"bottom-left"}},
-      start:2017-02-15,
-      end:2017-02-16
+      //start: yesta.getFullYear() + '-' + (('0' + (yesta.getMonth()+1))).slice(-2) + '-' + ('0' + yesta.getDate()).slice(-2),
+      //end: now.getFullYear() + '-' + (('0' + (now.getMonth()+1))).slice(-2) + '-' + ('0' + now.getDate()).slice(-2)
+      start:'2017-02-15',
+      end:'2017-02-16'
   };
-  //start: yesta.getFullYear() + '-' + (('0' + (yesta.getMonth()+1))).slice(-2) + '-' + ('0' + yesta.getDate()).slice(-2),
-  //end: now.getFullYear() + '-' + (('0' + (now.getMonth()+1))).slice(-2) + '-' + ('0' + now.getDate()).slice(-2)
   var graph2d = new vis.Graph2d(container, dataset, groups, options);
 </script>
 
